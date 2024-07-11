@@ -230,7 +230,6 @@ const authenticate = async ({ username, password }) => {
   };
 };
 
-// middlewarefunction
 const findUserWithToken = async (token) => {
   let id;
   try {
