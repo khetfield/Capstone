@@ -1,6 +1,7 @@
 /* Body */
 body {
-  background-color: darkslategray;
+  background-image: linear-gradient(darkslategray, black);
+  background-attachment: fixed;
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: palegoldenrod;
@@ -9,7 +10,7 @@ body {
   position: relative;
 }
 
-/* Navigation Bar */
+/* Nav*/
 .active {
   height: 3rem;
   width: 100%;
