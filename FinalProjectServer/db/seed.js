@@ -129,33 +129,52 @@ async function createInitialProducts() {
 async function createInitialCartItems() {
   try {
     console.log("Starting to create cart items...");
-    await client.query(`
+    // If there are no initial cart items, skip the insert query
+    const initialCartItems = []; // Add your initial data here if needed
+
+    if (initialCartItems.length > 0) {
+      const values = initialCartItems
+        .map(({ product_id, customer_id, quantity }) => 
+          `(${product_id}, ${customer_id}, ${quantity})`
+        )
+        .join(", ");
+
+      await client.query(`
         INSERT INTO "cart" ("product_id", "customer_id", "quantity") VALUES
-        (3, 3, 2),
-        (10, 1, 1),
-        (14, 3, 1)
-        `);
+        ${values}
+      `);
+    }
     console.log("Finished creating cart items!");
   } catch (error) {
     console.log("Error creating cart items!");
     throw error;
   }
 }
+
 async function createInitialOrderedItems() {
   try {
     console.log("Starting to create ordered items...");
-    await client.query(`
+    const initialOrderedItems = [];
+
+    if (initialOrderedItems.length > 0) {
+      const values = initialOrderedItems
+        .map(({ product_id, customer_id, quantity, price }) => 
+          `(${product_id}, ${customer_id}, ${quantity}, ${price})`
+        )
+        .join(", ");
+
+      await client.query(`
         INSERT INTO "orders" ("product_id", "customer_id", "quantity", "price") VALUES
-        (14, 3, 1, 7.99),
-        (5, 2, 2, 7.32),
-        (1, 3, 5, 9.95)
-        `);
+        ${values}
+      `);
+    }
     console.log("Finished creating ordered items!");
   } catch (error) {
     console.log("Error creating ordered items!");
     throw error;
   }
 }
+
 
 async function rebuildDB() {
   try {
