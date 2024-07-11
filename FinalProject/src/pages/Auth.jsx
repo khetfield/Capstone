@@ -58,7 +58,7 @@ function Auth() {
           {!form ? <h1>Register:</h1> : <h1>Login:</h1>}
           <input
             type={"text"}
-            placeholder={"Enter username..."}
+            placeholder={"Username..."}
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             className="form-input"
@@ -66,7 +66,7 @@ function Auth() {
           {!form && (
             <input
               type={"email"}
-              placeholder={"Enter email..."}
+              placeholder={"Email..."}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="form-input"
@@ -74,7 +74,7 @@ function Auth() {
           )}
           <input
             type={"password"}
-            placeholder={"Enter password..."}
+            placeholder={"Password..."}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             className="form-input"
@@ -83,14 +83,14 @@ function Auth() {
             <>
               <input
                 type={"password"}
-                placeholder={"confirm password..."}
+                placeholder={"Confirm Password..."}
                 value={checkPassword}
                 onChange={(e) => setCheckPassword(e.target.value)}
                 className="form-input"
               />
               <input
                 type="tel"
-                placeholder="Enter phone number..."
+                placeholder="Phone Number..."
                 value={phone_number}
                 onChange={(e) => setPhone_number(e.target.value)}
                 className="form-input"
@@ -106,11 +106,11 @@ function Auth() {
             ) : (
               <p>
                 <br />
-                Don't have an account?
+                Need to create a new account?
               </p>
             )}
             <button onClick={() => setForm(!form)} className="form-button">
-              {form ? "Register Here!" : "Login Here!"}
+              {form ? "Register!" : "Login!"}
             </button>
           </div>
         </div>

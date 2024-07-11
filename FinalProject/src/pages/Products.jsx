@@ -41,7 +41,7 @@ function Products() {
       <div className="searchProductsWrapper">
         <input
           type="text"
-          placeholder="Search Items..."
+          placeholder="Search for products..."
           onChange={(e) => setProduct(e.target.value)}
           className="searchBar"
         />
@@ -75,7 +75,7 @@ function Products() {
                   <h2>Category: {i.description}</h2>
                   <h2>Price: ${i.price}</h2>
                   {!user.id && !token ? (
-                    <h2>Login to add items to cart!</h2>
+                    <h2>Please login to add products to cart.</h2>
                   ) : (
                     <>
                       {!i.availability ? (

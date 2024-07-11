@@ -42,14 +42,14 @@ const Nav = () => {
             </li>
             <li>
               <Link to="/products">
-                Item List
+                Shop
                 <MenuBookRoundedIcon className="productsicon"></MenuBookRoundedIcon>
               </Link>
             </li>
             {user.users.is_admin && (
               <li>
                 <Link to={"/addProducts"}>
-                  Add Item
+                  Add Product
                   <AddCircleIcon className={"addCircleIcon"} />
                 </Link>
               </li>
@@ -81,7 +81,7 @@ const Nav = () => {
           </li>
           <li>
             <Link to="/products">
-              Items
+              Shop
               <MenuBookRoundedIcon className="productsicon"></MenuBookRoundedIcon>
             </Link>
           </li>
