@@ -1,5 +1,5 @@
 const pg = require("pg");
-const client = new pg.Client("postgres://localhost/grocery_store");
+const client = new pg.Client("postgres://localhost/shop_ship");
 
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
