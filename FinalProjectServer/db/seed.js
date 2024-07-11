@@ -129,8 +129,7 @@ async function createInitialProducts() {
 async function createInitialCartItems() {
   try {
     console.log("Starting to create cart items...");
-    // If there are no initial cart items, skip the insert query
-    const initialCartItems = []; // Add your initial data here if needed
+    const initialCartItems = [];
 
     if (initialCartItems.length > 0) {
       const values = initialCartItems

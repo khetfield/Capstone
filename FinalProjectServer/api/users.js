@@ -29,7 +29,6 @@ router.get("/", isAdmin, async (req, res, next) => {
   }
 });
 
-// get single user by id
 router.get("/:id", async (req, res, next) => {
   try {
     const user = await getSingleUserById(req.params.id);
