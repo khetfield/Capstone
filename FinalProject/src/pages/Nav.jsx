@@ -81,7 +81,7 @@ const Nav = () => {
           </li>
           <li>
             <Link to="/products">
-              Products
+              Items
               <MenuBookRoundedIcon className="productsicon"></MenuBookRoundedIcon>
             </Link>
           </li>
