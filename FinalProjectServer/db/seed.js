@@ -101,10 +101,10 @@ async function createInitialProducts() {
       (4.99, 'Fruit', 'Blueberries', 'Produce', 'https://media.healthyfood.com/wp-content/uploads/2017/03/Why_we_like_blueberries.jpg', 'f', ''),
       (1.29, 'Fruit', 'Lemon', 'Produce', 'https://media.istockphoto.com/id/1389128157/photo/lemon-fruit-with-leaf-isolated-whole-lemon-and-a-half-with-leaves-on-white-background-lemons.jpg?s=612x612&w=0&k=20&c=Gjyv0Yd0gMG4JZ5iE9e864ilZrurflx1gU6cKHn4E2s=', 't', 'https://www.melissas.com/cdn/shop/products/image-of-organic-meyer-lemons-fruit-28657802313772_326x545.jpg?v=1628088878'),
       (3.89, 'Fruit', 'Strawberries', 'Produce', 'https://i5.walmartimages.com/asr/373f0c0a-d976-4518-967c-9e8c626d1a10.fd992b4534c99ffa7bba91525be393cb.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF', 't', 'https://www.naturipefarms.com/wp-content/themes/naturipe/assets/img/strawberries/strawberries-nutrition-facts-2020.svg'),
-      (.99, 'Fruit', 'Orange', 'Produce', 'https://t3.ftcdn.net/jpg/00/56/01/00/360_F_56010077_UA98ADMw95rEB2hCuAlFOJkjdirrAAPV.jpg', 'f', ''),
-      (.79, 'Fruit', 'Apple', 'Produce', 'https://doorstepproduce.com/cdn/shop/products/6000200094512.jpg?v=1601387354', 't', 'https://www.melissas.com/cdn/shop/products/5-pounds-image-of-organic-fuji-apples-fruit-28658480840748_326x568.jpg?v=1628019593'),
-      (3.49, 'Vegetable', 'Carrots', 'Produce', 'https://static.vecteezy.com/system/resources/previews/003/040/897/large_2x/baby-carrots-on-white-background-free-photo.jpg', 't', 'https://www.melissas.com/cdn/shop/products/image-of-sweet-baby-carrots-vegetables-28143527002156_395x700.jpg?v=1619575781'),
-      (1.39, 'Vegetable', 'Onion', 'Produce', 'https://toriavey.com/images/2013/05/All-About-Onions-on-TheShiksa.com-history-cooking-tutorial.jpg', 'f', 'https://www.melissas.com/cdn/shop/products/image-of-organic-red-onions-28037182750764_321x540.jpg?v=1628016709'),
+      (.99, 'Fruit', 'Orange', 'Produce', 'https://t3.ftcdn.net/jpg/00/56/01/00/360_F_56010077_UA98ADMw95rEB2hCuAlFOJkjdirrAAPV.jpg', 't', ''),
+      (.79, 'Fruit', 'Apple', 'Produce', 'https://doorstepproduce.com/cdn/shop/products/6000200094512.jpg?v=1601387354', 'f', 'https://www.melissas.com/cdn/shop/products/5-pounds-image-of-organic-fuji-apples-fruit-28658480840748_326x568.jpg?v=1628019593'),
+      (3.49, 'Vegetable', 'Carrots', 'Produce', 'https://static.vecteezy.com/system/resources/previews/003/040/897/large_2x/baby-carrots-on-white-background-free-photo.jpg', 'f', 'https://www.melissas.com/cdn/shop/products/image-of-sweet-baby-carrots-vegetables-28143527002156_395x700.jpg?v=1619575781'),
+      (1.39, 'Vegetable', 'Onion', 'Produce', 'https://toriavey.com/images/2013/05/All-About-Onions-on-TheShiksa.com-history-cooking-tutorial.jpg', 't', 'https://www.melissas.com/cdn/shop/products/image-of-organic-red-onions-28037182750764_321x540.jpg?v=1628016709'),
       (2.49, 'Vegetable', 'Lettuce', 'Produce', 'https://m.media-amazon.com/images/I/41YWkRn8wPL._AC_UF894,1000_QL80_.jpg', 't', ''),
       (2.99, 'Vegetable', 'Broccoli', 'Produce', 'https://cdn.britannica.com/25/78225-050-1781F6B7/broccoli-florets.jpg', 't', 'https://healthyholic.com/cdn/shop/files/Broccoli_-_Nutrition_Label.jpg?v=1644962426'),
       (4.49, 'Vegetable', 'Brussel Sprouts', 'Produce', 'https://www.shutterstock.com/image-photo/fresh-organic-brussels-sprouts-isolated-600nw-1916031610.jpg', 't', ''),
@@ -116,8 +116,8 @@ async function createInitialProducts() {
       (2.69, 'Dairy', 'Milk', 'Dairy', 'https://i5.walmartimages.com/seo/Great-Value-Milk-Whole-Vitamin-D-Gallon-Plastic-Jug_6a7b09b4-f51d-4bea-a01c-85767f1b481a.86876244397d83ce6cdedb030abe6e4a.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF', 't', ''),
       (1.39, 'Dairy', 'Yogurt', 'Dairy', 'https://bjs.scene7.com/is/image/bjs/91215?$bjs-Zoom$', 't', ''),
       (3.99, 'Dairy', 'Sliced Cheese', 'Dairy', 'https://media01.stockfood.com/largepreviews/MjEwMTgwNjI=/00678002-A-Slice-of-Yellow-American-Cheese-on-a-White-Background.jpg', 't', ''),
-      (3.49, 'Dairy', 'Whipped Cream', 'Dairy', 'https://i5.walmartimages.com/seo/Reddi-wip-Original-Whipped-Topping-Made-with-Real-Cream-6-5-oz-Spray-Can_a728ee00-81d5-4c4c-8d97-6e40a5f13e27.2c5b32cf725c3512d3bd25a96a27e862.jpeg', 'f', ''),
-      (2.89, 'Dairy', 'Butter', 'Dairy', 'https://www.allrecipes.com/thmb/YEHvUygNdvsUwzKttGh314d9n1M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sticks-of-butter-photo-by-twoellis-GettyImages-149134517-resized-3911123142a141eca2340a4bb63e0869.jpg', 't', '')
+      (3.49, 'Dairy', 'Whipped Cream', 'Dairy', 'https://i5.walmartimages.com/seo/Reddi-wip-Original-Whipped-Topping-Made-with-Real-Cream-6-5-oz-Spray-Can_a728ee00-81d5-4c4c-8d97-6e40a5f13e27.2c5b32cf725c3512d3bd25a96a27e862.jpeg', 't', ''),
+      (2.89, 'Dairy', 'Butter', 'Dairy', 'https://www.allrecipes.com/thmb/YEHvUygNdvsUwzKttGh314d9n1M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sticks-of-butter-photo-by-twoellis-GettyImages-149134517-resized-3911123142a141eca2340a4bb63e0869.jpg', 'f', '')
     `);
 
     console.log("Finished creating products!");
