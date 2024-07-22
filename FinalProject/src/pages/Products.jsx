@@ -75,7 +75,7 @@ function Products() {
                   <h2>Category: {i.description}</h2>
                   <h2>Price: ${i.price}</h2>
                   {!user.id && !token ? (
-                    <h2>Please login to add products to cart.</h2>
+                    <h2>Please login to create order.</h2>
                   ) : (
                     <>
                       {!i.availability ? (
@@ -105,7 +105,7 @@ function Products() {
                       className="editButton"
                       onClick={(e) => handleEditButton(e)}
                     >
-                      Edit Item
+                      Edit Product
                     </button>
                   )}
                 </div>
