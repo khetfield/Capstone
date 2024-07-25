@@ -4,7 +4,7 @@ import { fetchBaseQuery } from "@reduxjs/toolkit/query";
 export const api = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:6800/",
+    baseUrl: "https://final-1-lspx.onrender.com",
     prepareHeaders: (headers, { getState }) => {
       const credentials = window.sessionStorage.getItem("CREDENTIALS");
       const parsedCredentials = JSON.parse(credentials || "{}");
