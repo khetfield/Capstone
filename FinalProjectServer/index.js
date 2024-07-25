@@ -13,6 +13,9 @@ app.use("/auth", require("./api/auth"));
 app.use("/api/cart", require("./api/cart.js"));
 app.use("/api/orders", require("./api/orders.js"));
 
+const pathToDist = __dirname + "../FinalProject/dist";
+app.use(express.static(pathToDist));
+
 app.listen(6800, () => {
   console.log("App is running at port 6800");
 });

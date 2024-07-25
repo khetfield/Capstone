@@ -1,5 +1,7 @@
+require('dotenv').config()
 const pg = require("pg");
-const client = new pg.Client("postgres://localhost/shop_ship");
+console.log(process.env.DATABASE_URL);
+const client = new pg.Client(process.env.DATABASE_URL);
 
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
